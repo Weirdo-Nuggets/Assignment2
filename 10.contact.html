@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="10.home.css">
+    <title>ChocoLety Contact Form</title>
+    <style>
+     .body-container {
+        background-image: url(P5Chocolate_bkgrnd.jpg);
+        background-size: cover;
+        height: 100vh;
+     }
+     .form {
+        background-color: white;
+        width: max-content;
+        height: max-content;
+        border: #3a0404 10px solid;
+        border-radius: 20px;
+        margin: 20px 10px auto auto;
+        padding: 10px;
+        text-align: center;
+     }
+     label {
+        color: #3a0404;
+        font-size: large;
+        font-weight: bold;
+     }
+     input, select, textarea, button, .map, .contact-us {
+        background-color: white;
+        border: #331d08 solid 3px;
+        border-radius: 10px;
+        color: #3a0404;
+     }
+     *::-webkit-input-placeholder {
+        color: #3a0404;
+        opacity: 0.7;
+    }
+    .locate {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto auto 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <img class="logo" src="P11cocologo2.png" alt="">
+        <h2 class="name">ChocoLety</h2>
+        <div class="buttons">
+            <button class="head-button" type="button" onclick="window.location.href='10.home.html'">Home</button>
+            <button class="head-button" type="button" onclick="window.location.href='10.about.html'">About</button>
+            <button class="head-button" type="button" onclick="window.location.href='10.news.html'">News</button>
+            <button class="head-button" type="button" onclick="window.location.href='10.contact.html'">Contact</button>
+            <button class="head-button" type="button" onclick="window.location.href='10.gallery.html'">Gallery</button>
+        </div>
+    </div>
+
+<div class="body-container">
+   <div class="form">
+       <form action="send.php" method="post">
+           <label style="font-size: xx-large; font-weight: bolder; color: #331d08;">Contact Us</label>
+           <br> <br>
+           
+           
+           <label for="name">Name</label> <br>
+           <input type="text" name="fname" placeholder="First Name"> <input type="text" name="lname" placeholder="Last Name">
+           <br> <br>
+
+           <label for="email">Email</label> <br>
+           <input type="email" name="email" placeholder="example@gmail.com">
+           <br> <br>
+
+           <label for="phone">Phone Number</label> <br>
+           <input type="text" name="phone" placeholder="+233">
+           <br> <br>
+
+           <label for="subject">Subject</label> <br>
+           <select name="subject">
+               <option value="select">-select-</option>
+               <option value="Feedback">Feedback</option>
+               <option value="Feedback">Complaint</option>
+               <option value="Feedback">Suggestion</option>
+           </select>
+           <br> <br>
+
+           <label for="concerns">Message</label> <br> 
+           <textarea name="concern" cols="30" rows="10"></textarea>
+           <br> <br>
+
+           <button type="submit" style="width: 100px; height: 50px; background-color: greenyellow; border: lightgray; border-radius: 30px; color: #3a0404; font-weight: bolder; font-size: 20px; font-family: 'Courier New',">Submit</button>
+       </form>
+   </div>
+
+<div class="locate">
+   <div class="map">
+       <img style="clear: left; margin: 10px;" src="P32location.png" width="300" height="300"> 
+       <div style="float: right;">
+       <h2>Address: <br> 8 Potato Avenue</h2>
+       <img src="P33place.png" width="250" height="206">
+       </div>
+   </div>
+
+   <div class="contact-us" style="display: flex; flex-direction: row; padding: 20px; height: 180px;">
+       <div class="contact">
+           <h2>Contact Us</h2>
+           <h4>Mobile: +233559930562</h4>
+           <h4>Email: chocolety.org@gmail.com</h4>
+       </div>
+       <div class="social-media" >
+           <h4 style="margin-left: 40px;">Reach Us On Social Media</h4>
+           <div class="buttons">
+               <img src="P13gmail.png" style="position: relative; top: 15px; left: 80px; ">
+               <img src="P14intstagram.png" style="position: relative; top: 57px; left: 65px;"> 
+               <img src="P15twitter.png"  style="position: relative; bottom: 30px;">
+               <img src="P16whatsapp.png" style="position: relative; top: 15px; right: 60px;">
+               <img src="P17facebook.png" style="position: relative; top: 16px; right: 80px;">
+           </div>
+
+       </div>
+   </div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

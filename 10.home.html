@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="10.home.css">
+    <title>ChocoLety</title>
+    <style type="text/css">
+ li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14 16px;
+     text-decoration: none;
+ }
+ li a:hover:not(.active) {
+     background-color: gray;
+ }
+ .active {
+     background-color: blue;
+ }
+.left-container {
+    width: 230px;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 5px;
+    border: #3a0404 10px solid;
+}
+img {
+    border: #3a0404 solid 3px;
+    margin: 3px;
+}
+.center-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(P5Chocolate_bkgrnd.jpg);
+    background-size: cover;
+    width: 200vh;
+    border: #3a0404 10px solid;
+}
+.buy-box {
+    background-color:white;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50px;
+    border: #3a0404 10px solid;
+}
+.chocolate {
+    display: inline-block;
+    border-radius: 30px;
+    width: 300px;
+    height: 270px;
+    margin-left: 10px;
+    padding: 10px;
+}
+input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -3px;
+    right: 9px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid greenyellow;
+}
+input[type='radio']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -3px;
+    right: 9px;
+    position: relative;
+    background-color: greenyellow;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.right-container {
+    text-align: center;
+    width: 230px;
+    border: #3a0404 10px solid;
+}
+.distributors {
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <img class="logo" src="P11cocologo2.png" alt="">
+        <h2 class="name">ChocoLety</h2>
+        <div class="buttons">
+            <button class="head-button" type="button" onclick="window.location.href='10.home.html'">Home</button>
+            <button class="head-button" type="button" onclick="window.location.href='10.about.html'">About</button>
+            <button class="head-button" type="button" onclick="window.location.href='10.news.html'">News</button>
+            <button class="head-button" type="button" onclick="window.location.href='10.contact.html'">Contact</button>
+            <button class="head-button" type="button" onclick="window.location.href='10.gallery.html'">Gallery</button>
+        </div>
+    </div>
+
+<div class="body-container">
+    <div class="left-container">
+        <div class="gallery">
+            <h4 align="center">Gallery</h4>
+            <img src="P3choco-exotic.png" alt="" width="150" height="150">
+            <img src="P4choco-infusion.png" alt="" width="150" height="150">
+            <img src="P6choco-praline.png" alt="" width="150" height="150">
+            <img src="P7choco-sauce.png" alt="" width="150" height="150">
+            <img src="P8choco-squares.png" alt="" width="150" height="150">
+            <img src="P9choco-trouffle.png" alt="" width="150" height="150">
+        </div>
+    </div>
+    <div class="center-container">
+        <h2 style="color: white; font-size: xx-large;">ChocoLety Chocolates</h2>
+        <div class="buy-box">
+            <div class="chocolate">
+                <img src="P28squares.jpg" alt="" width="200" height="150" style="border: none; border-radius: 10px;">
+                <p>ChocoLety Squares</p>
+                 <br>
+                <input type="radio" name="yes">
+            </div>
+            <div class="chocolate" >
+                <img src="P29box.jpg" alt="" width="200" height="150" style="border: none; border-radius: 10px;">
+                <p>ChocoLety Assorted Box</p>
+                <br>
+                <input type="radio" name="yes">
+            </div> <br>
+            <div class="chocolate">
+                <img src="P30exotic.jpg" alt="" width="200" height="150" style="border: none; border-radius: 10px;">
+                <p>ChocoLety Exotics</p>
+                <br>
+                <input type="radio" name="yes">
+            </div>
+            <div class="chocolate">
+                <img src="P31trouffle.jpg" alt="" width="200" height="150" style="border: none; border-radius: 10px;">
+                <p>ChocoLety Trouffles</p>
+                <br>
+                <input type="radio" name="yes">
+            </div>
+            <br>
+            <button type="submit" style="width: 100px; height: 50px; background-color: greenyellow; border: lightgray; border-radius: 30px; color: #3a0404; font-weight: bolder; font-size: 20px; font-family: 'Courier New',">Order</button>
+        </div>
+    </div>
+    <div class="right-container">
+        <h4>Top Distributors of ChocoLety Infusions</h4>
+        <div class="distributors">
+            <img src="C1.jpg" alt="" width="150" height="200">
+            <img src="C2.jpg" alt="" width="150" height="200"> <br>
+            <img src="C3.jpg" alt="" width="150" height="200">
+            <img src="C4.jpg" alt="" width="150" height="200">
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
